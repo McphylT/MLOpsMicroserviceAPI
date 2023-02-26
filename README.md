@@ -21,6 +21,8 @@ The project goal is to operationalize this working, machine learning microservic
 
 **The final implementation of the project showcases your abilities to operationalize production microservices.**
 
+---
+
 ### Description of Files
 * `app.py` contains the pre-built application we will be deploying using Docker
 * `make_prediction.sh` is the script we will be calling to make predictions
