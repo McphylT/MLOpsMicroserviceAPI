@@ -19,8 +19,6 @@ The project goal is to operationalize this working, machine learning microservic
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
 
-**The final implementation of the project showcases your abilities to operationalize production microservices.**
-
 ---
 
 ### Description of Files
