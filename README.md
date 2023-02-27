@@ -35,16 +35,15 @@ The project goal is to operationalize this working, machine learning microservic
 
 ## Setup the Environment
 
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
+* Create a virtualenv with Python 3.7 and activate it. 
 ```bash
-python3 -m pip install --user virtualenv
+python3 -m venv ~/.devops
 # You should have Python 3.7 available in your host. 
-# Check the Python path using `which python3`
-# Use a command similar to this one:
-python3 -m virtualenv --python=<path-to-Python3.7> .devops
-source .devops/bin/activate
+# Activate the virtual environment`
+source ~/.devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
+* Run `make lint` to ensure Dockerfile passes hadolint
 
 ### Running `app.py`
 
@@ -58,3 +57,8 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Uploading Docker image
+
+`bash upload_docker.sh`
+* Enter credentials and docker image will be uploaded to Docker Hub
